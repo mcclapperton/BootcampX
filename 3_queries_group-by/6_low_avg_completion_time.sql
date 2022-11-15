@@ -8,6 +8,3 @@ ORDER BY average_assignment_duration ASC;
 
 
 
-SELECT name, 
-FROM world
-WHERE gdp > (SELECT SUM((SELECT gpd FROM world WHERE gdp > 0)), FROM world where continent = 'Europe')
