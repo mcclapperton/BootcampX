@@ -5,3 +5,9 @@ JOIN assignments ON assignments.id = assignment_id
 WHERE students.end_date IS NULL
 GROUP BY student
 ORDER BY average_assignment_duration ASC;
+
+
+
+SELECT name, 
+FROM world
+WHERE gdp > (SELECT SUM((SELECT gpd FROM world WHERE gdp > 0)), FROM world where continent = 'Europe')
